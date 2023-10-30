@@ -45,6 +45,9 @@ Then ping a website:
 
 ## Partition the disks
 You will need to partition the disks
+
+During this part I found out that sometimes the the ISO will not install correctly and you may need to reinstall if it's missing anything
+
 To identify the block devices use lsblk or fdisk:
 ```shell
 lsblk -f 
