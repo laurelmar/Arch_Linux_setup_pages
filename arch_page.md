@@ -152,7 +152,7 @@ EXIT using exit or ctrl d
 # Post installation customization
 
 ## 1. Add desktop environment
-I added gnome for my desktop environment
+I added gnome for my desktop environment because it is one of the most common desktop enviroments.
 ```shell
 pacman -Syu
 ```
