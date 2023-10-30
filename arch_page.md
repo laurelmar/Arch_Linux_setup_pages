@@ -20,7 +20,7 @@ firmware = "efi"
 cat /sys/firmware/efi/fw_platform_size to check the boot mode and it was verified to be in  64-bit x64 UEFI
 ```
 
-![Local Image](fireware_check.png)
+![Image of code](/assets/firmware_check.png)
 
 ### check internet connection:
 First use:
