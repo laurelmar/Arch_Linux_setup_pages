@@ -34,13 +34,13 @@ Then ping a website:
  ping archlinux.org
 ```
 
-![[Pasted image 20231028143249.png]]
+![Image of code](/assets/iplink.png)
 ### Updating system clock:
 ```shell
  timedatect1
 ```
 
-![[Pasted image 20231028143322.png]]
+![Image of code](/assets/timedate.png)
 
 
 ## Partition the disks
@@ -50,7 +50,7 @@ To identify the block devices use lsblk or fdisk:
 lsblk -f 
 fdisk -1 
 ```
-
+![Image of code](/assets/fdisk-l.png)
 
 I partitioned  sda1 and sda2 in /dev/sda
 * fdisk /dev/sda1
@@ -65,7 +65,7 @@ w = write new changes
 ```
 For the last sector of the first partition add +500M
 
-![[Pasted image 20231028150652.png]]
+![Image of code](/assets/makingpartitions.png)
 
 Formatting the partition 
 
@@ -110,13 +110,13 @@ arch-chroot /mnt
 ln -sf /usr/share/zoneinfo/North_America/Oklahoma/Tulsa /etc/localtime|
 hwclock --systohc
 ```
-![[Pasted image 20231028155106.png]]
+![Image of code](/assets/ln.png)
 2. Localization
 ```shell
 vim /etc/locale.gen
 ```
 Uncomment en_US.UTF-8 UTF-8 
- ![[Pasted image 20231028154739.png]]
+![Image of code](/assets/en_US.png)
  ```shell
 echo 'LANG=en_US.UTF-8' > /etc/locale.conf
 ```
@@ -190,7 +190,7 @@ usermod -aG sudogroup laurel
 usermod -aG sudogroup codi 
 ```
 
-![[Pasted image 20231028154958.png]]
+![Alt text](assets/usergroup.png)
 
 ## 3. SSH
 To add ssh 
@@ -240,4 +240,4 @@ source ~/.zshrc
 Then leave terminal and go back in to see changes 
 
 
-![[Pasted image 20231028155017.png]]
+![Alt text](assets/zshrc.png)
